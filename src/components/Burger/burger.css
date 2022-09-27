@@ -1,0 +1,123 @@
+.burger-container {
+  text-align: center;
+  height: 400px;
+  overflow: auto;
+}
+
+.burger-top {
+  background-image: url(../../assets/top.jpg);
+  background-size: 300px;
+  height: 110px;
+  width: 100%;
+  display: table;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.burger-bottom {
+  background-image: url(../../assets/bottom.jpg);
+  background-size: 300px;
+  height: 60px;
+  width: 100%;
+  display: table;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.options-container {
+  background-color: rgb(216, 134, 62);
+  padding: 10px;
+  text-align: center;
+}
+
+.options-container p span {
+  font-weight: bold;
+}
+
+.buttons-rows {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.buttons-rows p {
+  font-weight: bold;
+  font-size: 15px;
+  width: 80px;
+
+}
+
+.btns {
+  margin: 0 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.decrease-btn {
+  margin: 7px;
+  background-color: rgb(235, 161, 96);
+  border: 1px solid rgb(107, 71, 55);
+  color: white;
+  width: 95px;
+}
+
+.increase-btn {
+  margin: 7px;
+  background-color: rgb(108, 90, 55);
+  border: 1px solid rgb(107, 71, 55);
+  color: white;
+  width: 95px;
+}
+
+.disbale-btn {
+  background-color: rgb(158, 156, 155, 0.3);
+  cursor: not-allowed;
+  margin: 7px;
+  border: 1px solid rgb(107, 71, 55, 0.3);
+  color: rgb(208, 207, 207, 0.6);
+  width: 95px;
+}
+
+.lettuse,
+.bacon,
+.cheese,
+.meat {
+  background-size: 300px;
+  height: 25px;
+  width: 100%;
+  margin-top: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lettuse {
+  background-image: url(../../assets/lettuse.jpg);
+}
+
+.cheese {
+  background-image: url(../../assets/cheese.jpg);
+}
+
+.bacon {
+  background-image: url(../../assets/tomato.jpg);
+}
+
+.meat {
+  background-image: url(../../assets/meat.jpg);
+}
+
+.checkout-btn {
+  padding: 5px;
+  margin: 7px;
+  background-color: rgb(241, 232, 51);
+  border: 1px solid rgb(107, 71, 55);
+  color: rgb(193, 130, 13);
+  width: 20%;
+}
+
+.checkout {
+  width: 15%;
+  padding: 10px;
+}

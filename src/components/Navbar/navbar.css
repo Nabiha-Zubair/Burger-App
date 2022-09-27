@@ -1,0 +1,21 @@
+.navbar {
+  background-color: rgb(101, 66, 37) !important;
+}
+
+.logo {
+  width: 10%;
+  height: auto;
+}
+
+.nav-item {
+  color: white !important;
+  text-decoration: none;
+}
+
+
+.active {
+  border: none !important;
+  border-bottom: 2px solid rgb(27, 77, 218) !important;
+  background-color: rgb(217, 218, 219, 0.1) !important;
+  padding: 10px;
+}

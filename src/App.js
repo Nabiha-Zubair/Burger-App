@@ -3,25 +3,23 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+
 } from "react-router-dom";
-import logo from './logo.svg';
+
 import './App.css';
-import { Navbar } from './components/Navbar/navbar'
-import { Burger } from './components/Burger/burger'
-import { Order } from './components/Orders/orders'
-import { Authentication } from './components/Authentication/signin'
+import { Navbar } from './pages/Navbar/navbar'
+import { Burger } from './pages/Burger/burger'
+import { Order } from './pages/Orders/orders'
+import { Authentication } from './pages/Authentication/auth-page'
 import firebase from 'firebase/app';
-import { getAuth } from "firebase/auth";
-import AuthContext from './components/Authentication/auth-context';
+import AuthContext from './pages/Authentication/auth-context';
 import { firebaseConfig } from './Firebase/firebaseConfig';
-// import { Signin } from './components/Authentication/signin'
 
 
 function App() {
-  let app;
+
   if (!firebase.apps.length) {
-    app = firebase.initializeApp(firebaseConfig);
+    firebase.initializeApp(firebaseConfig);
     console.log("connected");
   }
 
@@ -30,7 +28,7 @@ function App() {
   return (
     <AuthContext.Provider value={{ auth }}>
       <Router>
-        <Navbar page={window.location.pathname} />
+        <Navbar />
         <Routes>
           <Route exact path="/" element={<Burger />} />
           <Route path="/orders" element={<Order />} />

@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react'
 import './burger.css'
 import { Buttons } from './buttons'
 import { useNavigate } from "react-router-dom";
-import AuthContext from '../Authentication/auth-context'
+import AuthContext from '../../pages/Authentication/auth-context'
 import ButtonsContext from './buttons-context'
 
 

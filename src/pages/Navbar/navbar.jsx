@@ -30,14 +30,14 @@ export const Navbar = (props) => {
 
             <ul className="d-flex navbar-nav me-auto mb-2 mb-lg-0">
               <li>
-                <Link to='/' className={props.page === "/" ? "nav-item m-3 active" : "nav-item m-3"}>Burger Builder</Link>
+                <Link to='/' className="nav-item m-3 active">Burger Builder</Link>
               </li>
 
               {auth.currentUser ?
                 (<>
-                  <li><Link to='/orders' className={props.page === "/auth" ? "nav-item m-3 active" : "nav-item m-3 "}>Orders</Link></li>
-                  <li><Link className={props.page === "/auth" ? "nav-item m-3 active" : "nav-item m-3 "} onClick={() => logout()}>Logout</Link></li></>) :
-                (<li className="nav-item"><Link to='/auth' className={props.page === "/auth" ? "nav-item m-3 active" : "nav-item m-3 "}>Login</Link></li>)}
+                  <li><Link to='/orders' className="nav-item m-3 active">Orders</Link></li>
+                  <li><Link className="nav-item m-3 " onClick={() => logout()}>Logout</Link></li></>) :
+                (<li className="nav-item"><Link to='/auth' className="nav-item m-3 ">Login</Link></li>)}
             </ul>
 
           </span>

@@ -60,7 +60,14 @@
   background-color: rgb(235, 161, 96);
   border: 1px solid rgb(107, 71, 55);
   color: white;
-  width: 95px;
+  border-radius: 0 !important;
+  width: 50% !important;
+}
+
+.btn-success:hover {
+  background-color: rgb(238, 183, 134) !important;
+  border: 1px solid rgb(107, 71, 55) !important;
+
 }
 
 .increase-btn {
@@ -71,13 +78,31 @@
   width: 95px;
 }
 
-.disbale-btn {
-  background-color: rgb(158, 156, 155, 0.3);
-  cursor: not-allowed;
-  margin: 7px;
-  border: 1px solid rgb(107, 71, 55, 0.3);
-  color: rgb(208, 207, 207, 0.6);
-  width: 95px;
+.btn-secondary {
+  background-color: rgb(158, 156, 155, 0.3) !important;
+  cursor: not-allowed !important;
+  margin: 7px !important;
+  border-radius: 0 !important;
+  border: 1px solid rgb(107, 71, 55, 0.3) !important;
+  color: rgba(218, 215, 215, 0.6) !important;
+  width: 50% !important;
+}
+
+.btn-secondary:hover {
+  background-color: none !important;
+  color: none !important;
+}
+
+.btn-primary {
+  background-color: rgb(241, 232, 51) !important;
+  border: 1px solid rgb(107, 71, 55) !important;
+  color: rgb(193, 130, 13) !important;
+  width: 20%;
+}
+
+.checkout {
+  padding: 10px;
+  width: 20% !important;
 }
 
 .lettuse,
@@ -106,18 +131,4 @@
 
 .meat {
   background-image: url(../../assets/meat.jpg);
-}
-
-.checkout-btn {
-  padding: 5px;
-  margin: 7px;
-  background-color: rgb(241, 232, 51);
-  border: 1px solid rgb(107, 71, 55);
-  color: rgb(193, 130, 13);
-  width: 20%;
-}
-
-.checkout {
-  width: 15%;
-  padding: 10px;
 }

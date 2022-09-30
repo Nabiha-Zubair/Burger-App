@@ -60,7 +60,7 @@ export const Burger = () => {
         <div className="burger-bottom"></div>
       </div>
       <div className="options-container" key={ingredients.length}>
-        <ButtonsContext.Provider value={{ setIngredients, updateIngredients }}>
+        <ButtonsContext.Provider value={{ updateIngredients }}>
 
           <p>Current price: <span> ${price.toFixed(2)}</span></p>
           <Buttons label={"lettuce"} quantity={ingredients.lettuce.length} />
